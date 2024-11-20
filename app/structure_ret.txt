@@ -1,0 +1,103 @@
+.
+├── __init__.py
+├── __pycache__
+│   ├── __init__.cpython-310.pyc
+│   └── main.cpython-310.pyc
+├── api
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   └── __init__.cpython-310.pyc
+│   └── v1
+│       ├── __init__.py
+│       ├── __pycache__
+│       │   ├── __init__.cpython-310.pyc
+│       │   ├── admin.cpython-310.pyc
+│       │   ├── analyze.cpython-310.pyc
+│       │   ├── auth.cpython-310.pyc
+│       │   ├── chatbot.cpython-310.pyc
+│       │   ├── courses.cpython-310.pyc
+│       │   ├── dependencies.cpython-310.pyc
+│       │   ├── forms.cpython-310.pyc
+│       │   ├── projects.cpython-310.pyc
+│       │   ├── quests.cpython-310.pyc
+│       │   ├── skill_tree.cpython-310.pyc
+│       │   └── users.cpython-310.pyc
+│       ├── admin.py
+│       ├── analyze.py
+│       ├── auth.py
+│       ├── chatbot.py
+│       ├── courses.py
+│       ├── dependencies.py
+│       ├── forms.py
+│       ├── projects.py
+│       ├── protected_route.py
+│       ├── quests.py
+│       ├── skill_tree.py
+│       └── users.py
+├── core
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   └── config.cpython-310.pyc
+│   ├── check_and_create_db.py
+│   ├── config.py
+│   ├── security.py
+│   ├── settings_local.py
+│   └── settings_prod.py
+├── courses.py
+├── db
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── models.cpython-310.pyc
+│   │   └── session.cpython-310.pyc
+│   ├── check_and_create_db_postgresql.py
+│   ├── models.py
+│   └── session.py
+├── main.py
+├── quests.py
+├── schemas
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── auth.cpython-310.pyc
+│   │   ├── course.cpython-310.pyc
+│   │   ├── form_schemas.cpython-310.pyc
+│   │   ├── project.cpython-310.pyc
+│   │   ├── quest.cpython-310.pyc
+│   │   └── skill_tree.cpython-310.pyc
+│   ├── auth.py
+│   ├── course.py
+│   ├── form_schemas.py
+│   ├── ia.py
+│   ├── project.py
+│   ├── quest.py
+│   └── skill_tree.py
+├── services
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── analyze_service.cpython-310.pyc
+│   │   ├── auth.cpython-310.pyc
+│   │   ├── course.cpython-310.pyc
+│   │   ├── course_service.cpython-310.pyc
+│   │   ├── form_service.cpython-310.pyc
+│   │   ├── ia_service.cpython-310.pyc
+│   │   ├── project.cpython-310.pyc
+│   │   ├── project_analyzer.cpython-310.pyc
+│   │   ├── quest.cpython-310.pyc
+│   │   ├── skill_tree.cpython-310.pyc
+│   │   └── user.cpython-310.pyc
+│   ├── analyze_service.py
+│   ├── auth.py
+│   ├── course_service.py
+│   ├── form_service.py
+│   ├── ia_service.py
+│   ├── project.py
+│   ├── project_analyzer.py
+│   ├── quest.py
+│   ├── skill_tree.py
+│   └── user.py
+├── skill_tree.py
+└── structure_ret.txt
+
+14 directories, 87 files

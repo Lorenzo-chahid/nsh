@@ -1,0 +1,381 @@
+[
+    {
+      "name": "Push-up",
+      "category": "Strength Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 430,
+      "description": "An exercise where you start in a plank position and lower your body until your chest nearly touches the floor, then push back up.",
+      "muscle_groups": ["Chest", "Triceps", "Shoulders", "Core"],
+      "equipment": "None (Bodyweight)"
+    },
+    {
+      "name": "Squat",
+      "category": "Strength Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 450,
+      "description": "Stand with feet shoulder-width apart, bend your knees and hips to lower your body as if sitting back into a chair, then return to standing.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Core"],
+      "equipment": "None (Bodyweight) or Barbell/Dumbbells"
+    },
+    {
+      "name": "Running",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 600,
+      "description": "Continuous running at a steady pace over a certain distance or time.",
+      "muscle_groups": ["Legs", "Cardiovascular System"],
+      "equipment": "Running Shoes"
+    },
+    {
+      "name": "Cycling",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 500,
+      "description": "Riding a bicycle at a moderate pace to improve cardiovascular fitness.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Calves", "Glutes"],
+      "equipment": "Bicycle"
+    },
+    {
+      "name": "Plank",
+      "category": "Core Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 250,
+      "description": "Hold a push-up position while keeping your back straight and core engaged for a set period.",
+      "muscle_groups": ["Core", "Back", "Shoulders"],
+      "equipment": "None (Bodyweight)"
+    },
+    {
+      "name": "Burpee",
+      "category": "Full Body",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 700,
+      "description": "A full-body exercise involving a squat, kick-back to plank, push-up, return to squat, and a jump.",
+      "muscle_groups": ["Full Body"],
+      "equipment": "None (Bodyweight)"
+    },
+    {
+      "name": "Bench Press",
+      "category": "Strength Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 400,
+      "description": "Lie on a bench and press a barbell upwards from chest level until arms are fully extended.",
+      "muscle_groups": ["Chest", "Triceps", "Shoulders"],
+      "equipment": "Barbell and Bench"
+    },
+    {
+      "name": "Deadlift",
+      "category": "Strength Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 500,
+      "description": "Lift a loaded barbell or bar from the ground to hip level, then lower it back to the ground.",
+      "muscle_groups": ["Back", "Hamstrings", "Glutes", "Core"],
+      "equipment": "Barbell"
+    },
+    {
+      "name": "Pull-up",
+      "category": "Strength Training",
+      "difficulty": "Advanced",
+      "average_calories_per_hour": 600,
+      "description": "Hang from a bar with an overhand grip and pull your body up until your chin is above the bar.",
+      "muscle_groups": ["Back", "Biceps", "Shoulders"],
+      "equipment": "Pull-up Bar"
+    },
+    {
+      "name": "Swimming",
+      "category": "Cardio",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 700,
+      "description": "Propel yourself through water using your limbs for a full-body workout.",
+      "muscle_groups": ["Full Body"],
+      "equipment": "Swimming Pool"
+    },
+    {
+      "name": "Lunges",
+      "category": "Strength Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 350,
+      "description": "Step forward with one leg, lowering your hips until both knees are bent at about 90 degrees, then return to standing.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings"],
+      "equipment": "None (Bodyweight) or Dumbbells"
+    },
+    {
+      "name": "Mountain Climbers",
+      "category": "Cardio",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 650,
+      "description": "From a plank position, alternate bringing knees to chest in a running motion.",
+      "muscle_groups": ["Core", "Legs", "Shoulders"],
+      "equipment": "None (Bodyweight)"
+    },
+    {
+      "name": "Jump Rope",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 800,
+      "description": "Jump over a rope swung so that it passes under the feet and over the head.",
+      "muscle_groups": ["Legs", "Cardiovascular System"],
+      "equipment": "Jump Rope"
+    },
+    {
+      "name": "Bicep Curl",
+      "category": "Strength Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 280,
+      "description": "Lift a dumbbell by bending the elbow and bringing it toward the shoulder.",
+      "muscle_groups": ["Biceps"],
+      "equipment": "Dumbbells"
+    },
+    {
+      "name": "Tricep Dip",
+      "category": "Strength Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 300,
+      "description": "Lower and raise your body using your arms while your hands are behind you on a bench or chair.",
+      "muscle_groups": ["Triceps", "Shoulders"],
+      "equipment": "Bench or Chair"
+    },
+    {
+      "name": "Yoga",
+      "category": "Flexibility",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 200,
+      "description": "A practice combining physical postures, breathing techniques, and meditation.",
+      "muscle_groups": ["Full Body", "Mind"],
+      "equipment": "Yoga Mat"
+    },
+    {
+      "name": "High Knees",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 600,
+      "description": "Run in place while lifting your knees as high as possible.",
+      "muscle_groups": ["Legs", "Core"],
+      "equipment": "None (Bodyweight)"
+    },
+    {
+      "name": "Jump Squat",
+      "category": "Plyometrics",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 700,
+      "description": "Perform a squat and then explosively jump upward.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves"],
+      "equipment": "None (Bodyweight)"
+    },
+    {
+      "name": "Bench Step-up",
+      "category": "Strength Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 400,
+      "description": "Step onto a bench with one foot, press through the heel to lift your body up, then step back down.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings"],
+      "equipment": "Bench or Step"
+    },
+    {
+      "name": "Rowing",
+      "category": "Cardio",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 600,
+      "description": "Use a rowing machine to simulate the motion of watercraft rowing.",
+      "muscle_groups": ["Back", "Legs", "Arms", "Core"],
+      "equipment": "Rowing Machine"
+    },
+    {
+      "name": "Box Jump",
+      "category": "Plyometrics",
+      "difficulty": "Advanced",
+      "average_calories_per_hour": 800,
+      "description": "Jump from the ground onto a sturdy box or platform.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Calves"],
+      "equipment": "Box or Platform"
+    },
+    {
+      "name": "Russian Twist",
+      "category": "Core Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 300,
+      "description": "Sit on the floor with knees bent, lean back slightly, and twist your torso from side to side.",
+      "muscle_groups": ["Obliques", "Core"],
+      "equipment": "None or Medicine Ball"
+    },
+    {
+      "name": "Leg Press",
+      "category": "Strength Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 350,
+      "description": "Push a weight or resistance away from the body using the legs.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings"],
+      "equipment": "Leg Press Machine"
+    },
+    {
+      "name": "Elliptical Training",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 550,
+      "description": "Use an elliptical trainer to simulate walking or running without causing excessive pressure on the joints.",
+      "muscle_groups": ["Legs", "Cardiovascular System"],
+      "equipment": "Elliptical Machine"
+    },
+    {
+      "name": "Shoulder Press",
+      "category": "Strength Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 320,
+      "description": "Press weights upward above the head from shoulder level.",
+      "muscle_groups": ["Shoulders", "Triceps"],
+      "equipment": "Dumbbells or Barbell"
+    },
+    {
+      "name": "Pilates",
+      "category": "Flexibility",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 250,
+      "description": "A low-impact exercise aiming to strengthen muscles while improving postural alignment and flexibility.",
+      "muscle_groups": ["Core", "Back", "Legs"],
+      "equipment": "Mat or Pilates Equipment"
+    },
+    {
+      "name": "Side Plank",
+      "category": "Core Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 220,
+      "description": "Support the body on one forearm in a lateral position, keeping the body straight.",
+      "muscle_groups": ["Obliques", "Core", "Shoulders"],
+      "equipment": "None (Bodyweight)"
+    },
+    {
+      "name": "Leg Curl",
+      "category": "Strength Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 300,
+      "description": "Flex the lower leg against resistance towards the buttocks.",
+      "muscle_groups": ["Hamstrings"],
+      "equipment": "Leg Curl Machine"
+    },
+    {
+      "name": "Kettlebell Swing",
+      "category": "Strength Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 600,
+      "description": "Swing a kettlebell between your legs up to chest level using hip thrust.",
+      "muscle_groups": ["Glutes", "Hamstrings", "Back", "Shoulders"],
+      "equipment": "Kettlebell"
+    },
+    {
+      "name": "Battle Ropes",
+      "category": "Cardio",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 800,
+      "description": "Swing heavy ropes in various motions for a high-intensity workout.",
+      "muscle_groups": ["Arms", "Shoulders", "Core"],
+      "equipment": "Battle Ropes"
+    },
+    {
+      "name": "Wall Sit",
+      "category": "Strength Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 200,
+      "description": "Hold a static position where your knees are bent at 90 degrees against a wall.",
+      "muscle_groups": ["Quadriceps", "Glutes"],
+      "equipment": "Wall"
+    },
+    {
+      "name": "Handstand Push-up",
+      "category": "Strength Training",
+      "difficulty": "Advanced",
+      "average_calories_per_hour": 700,
+      "description": "Perform a push-up while in a handstand position against a wall.",
+      "muscle_groups": ["Shoulders", "Triceps", "Core"],
+      "equipment": "None (Bodyweight) or Wall for Support"
+    },
+    {
+      "name": "Treadmill Running",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 600,
+      "description": "Running on a treadmill at a set speed and incline.",
+      "muscle_groups": ["Legs", "Cardiovascular System"],
+      "equipment": "Treadmill"
+    },
+    {
+      "name": "Medicine Ball Slam",
+      "category": "Strength Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 650,
+      "description": "Lift a medicine ball overhead and slam it down onto the ground forcefully.",
+      "muscle_groups": ["Core", "Back", "Shoulders"],
+      "equipment": "Medicine Ball"
+    },
+    {
+      "name": "Jumping Jacks",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 500,
+      "description": "Jump to a position with legs spread and arms overhead, then return to the original position.",
+      "muscle_groups": ["Legs", "Arms", "Cardiovascular System"],
+      "equipment": "None (Bodyweight)"
+    },
+    {
+      "name": "Seated Row",
+      "category": "Strength Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 330,
+      "description": "Pull a weighted handle toward your torso while seated.",
+      "muscle_groups": ["Back", "Biceps", "Shoulders"],
+      "equipment": "Rowing Machine or Resistance Bands"
+    },
+    {
+      "name": "Farmer's Walk",
+      "category": "Strength Training",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 400,
+      "description": "Walk a set distance while carrying heavy weights in each hand.",
+      "muscle_groups": ["Grip Strength", "Legs", "Core", "Shoulders"],
+      "equipment": "Dumbbells or Kettlebells"
+    },
+    {
+      "name": "Sit-up",
+      "category": "Core Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 300,
+      "description": "Lie on your back and lift your torso to a sitting position, then lower back down.",
+      "muscle_groups": ["Abdominals"],
+      "equipment": "None (Bodyweight)"
+    },
+    {
+      "name": "Spinning",
+      "category": "Cardio",
+      "difficulty": "Intermediate",
+      "average_calories_per_hour": 600,
+      "description": "High-intensity cycling typically performed in a class setting.",
+      "muscle_groups": ["Legs", "Cardiovascular System"],
+      "equipment": "Stationary Bike"
+    },
+    {
+      "name": "Standing Calf Raise",
+      "category": "Strength Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 280,
+      "description": "Lift your heels off the ground while standing to engage calf muscles.",
+      "muscle_groups": ["Calves"],
+      "equipment": "None or Machine"
+    },
+    {
+      "name": "Zumba",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 500,
+      "description": "A dance fitness program involving aerobic movements performed to energetic music.",
+      "muscle_groups": ["Full Body"],
+      "equipment": "None"
+    },
+    {
+      "name": "Glute Bridge",
+      "category": "Strength Training",
+      "difficulty": "Beginner",
+      "average_calories_per_hour": 300,
+      "description": "Lie on your back with knees bent, lift hips off the ground to form a straight line from knees to shoulders.",
+      "muscle_groups": ["Glutes", "Hamstrings", "Core"],
+      "equipment": "None (Bodyweight)"
+    }
+  ]
+  
