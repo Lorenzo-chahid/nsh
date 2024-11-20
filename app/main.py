@@ -67,6 +67,8 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
+    "https://nsh-frontend.onrender.com",
+    "https://nsh-frontend.onrender.com/*",
     allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nsh-backend
+    env: python
+    buildCommand: ''
+    startCommand: './start.sh'
+    envVars:
+      - key: ENV
+        value: production
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: FRONTEND_URL
+        value: https://nsh-frontend.onrender.com
