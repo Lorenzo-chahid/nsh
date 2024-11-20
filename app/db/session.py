@@ -24,7 +24,7 @@ else:
     engine = create_engine(DATABASE_URL)
 
 # Asynchronous engine
-ASYNC_DATABASE_URL = DATABASE_URL.replace("sqlite://", "sqlite+aiosqlite://")
+ASYNC_DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://")
 async_engine = create_async_engine(ASYNC_DATABASE_URL, echo=True)
 
 # Synchronous session
