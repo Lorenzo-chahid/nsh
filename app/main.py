@@ -60,15 +60,12 @@ app = FastAPI()
 
 # Configuration CORS
 origins = [
-    "*",
-    "http://localhost:3000",  # Adresse de votre frontend React
-    "*",  # Autoriser toutes les origines (à ajuster pour la production)
+    "http://localhost:3000",  # Frontend local
+    "https://nsh-frontend.onrender.com",  # Frontend sur Render
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    "https://nsh-frontend.onrender.com",
-    "https://nsh-frontend.onrender.com/*",
     allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
