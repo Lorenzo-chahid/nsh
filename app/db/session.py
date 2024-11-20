@@ -1,5 +1,3 @@
-# app/db/session.py
-
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -7,10 +5,19 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 
 from app.db.models import Base  # Import Base from models
 
-# Database URL
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./test.db")
+# Détection de l'environnement
+ENV = os.getenv("ENV", "local")  # Par défaut, on considère que c'est en local
 
-# Synchronous engine
+# Configuration de la base de données
+if ENV == "production":
+    DATABASE_URL = os.getenv(
+        "DATABASE_URL",
+        "postgresql://nsh_user:oEcyrsakHYk9MJ6vWLhd2wozx2t2BeUI@dpg-csv20om8ii6s73emv3lg-a.frankfurt-postgres.render.com/nsh",
+    )
+else:
+    DATABASE_URL = "sqlite:///./test.db"
+
+# Configuration des engines
 if "sqlite" in DATABASE_URL:
     engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 else:
