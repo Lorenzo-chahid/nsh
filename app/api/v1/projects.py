@@ -9,6 +9,7 @@ from app.db.session import get_db
 from app.api.v1.dependencies import get_current_user
 from app.db.models import User, Project, SubGoal, Course, Section, UserProject
 from app.services.project_analyzer import ProjectAnalyzer
+from sqlalchemy.dialects import postgresql
 
 import os
 
@@ -85,35 +86,21 @@ def get_public_projects(db: Session = Depends(get_db)):
     return public_projects
 
 
-@router.get("/", response_model=list[ProjectResponse])
+@router.get("/", response_model=List[ProjectResponse])
 async def list_user_projects(
-    db: AsyncSession = Depends(get_db), current_user: User = Depends(get_current_user)
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
-    # Récupère les projets liés directement à l'utilisateur (via `user_id`) et via `UserProject`
-    result = db.execute(
+    result = await db.execute(
         select(Project)
-        .outerjoin(UserProject, Project.id == UserProject.project_id)
-        .where(
-            (Project.user_id == current_user.id)
-            | (UserProject.user_id == current_user.id)
+        .options(
+            selectinload(Project.courses)
+            .selectinload(Course.sections)
+            .selectinload(Section.exercises)
         )
+        .where((Project.user_id == current_user.id))
     )
     user_projects = result.scalars().all()
-
-    # Debugging pour vérifier les projets récupérés
-    for project in user_projects:
-        print(
-            f"Project ID: {project.id}, Name: {project.name}, Category: {project.category}"
-        )
-        courses = project.courses
-        if courses:
-            for course in courses:
-                print(
-                    f"  Course ID: {course.id}, Title: {course.title}, Description: {course.description}"
-                )
-        else:
-            print("  No courses found for this project.")
-
     return user_projects
 
 
@@ -140,7 +127,12 @@ def list_projects(
 
 
 @router.get("/{project_id}", response_model=ProjectResponse)
-async def get_project_by_id(project_id: int, db: AsyncSession = Depends(get_db)):
+async def get_project_by_id(
+    project_id: int,
+    db: AsyncSession = Depends(get_db),
+):
+    print("PIUKACHU")
+    # Supprimer le filtre sur user_id
     result = db.execute(
         select(Project)
         .options(
@@ -150,29 +142,41 @@ async def get_project_by_id(project_id: int, db: AsyncSession = Depends(get_db))
         )
         .where(Project.id == project_id)
     )
+
     project = result.scalars().first()
+
     if not project:
         raise HTTPException(status_code=404, detail="Project not found")
-    return project
 
+    # Log des détails du projet
+    print(f"Project ID: {project.id}")
+    print(f"Name: {project.name}")
+    print(f"Description: {project.description}")
+    print(f"Duration: {project.duration}")
+    print(f"Category: {project.category}")
+    print(f"Created At: {project.created_at}")
 
-@router.get("/{project_id}", response_model=ProjectResponse)
-def get_project_by_id(
-    project_id: int,
-    db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
-):
-    # Vérifier que le projet appartient à l'utilisateur actuel
-    project = (
-        db.query(Project)
-        .filter(Project.id == project_id, Project.user_id == current_user.id)
-        .first()
-    )
-
-    if not project:
-        raise HTTPException(
-            status_code=404, detail="Project not found or access denied."
-        )
+    # Log des cours liés au projet
+    if project.courses:
+        print("Courses:")
+        for course in project.courses:
+            print(f"  Course ID: {course.id}")
+            print(f"  Title: {course.title}")
+            print(f"  Description: {course.description}")
+            if course.sections:
+                print("  Sections:")
+                for section in course.sections:
+                    print(f"    Section ID: {section.id}")
+                    print(f"    Title: {section.title}")
+                    print(f"    Content: {section.content}")
+                    if section.exercises:
+                        print("    Exercises:")
+                        for exercise in section.exercises:
+                            print(f"      Exercise ID: {exercise.id}")
+                            print(f"      Question: {exercise.question}")
+                            print(f"      Answer: {exercise.answer}")
+    else:
+        print("No courses found.")
 
     return project
 

@@ -297,7 +297,7 @@ async def on_startup():
                 print(f"Erreur lors de la création de l'administrateur: {e}")
 
     # Appeler la fonction pour créer le projet public
-    await create_project_from_file("app.data.ukrainian_course_data")
+    await create_project_from_file("app.data.stop_canabis_data")
 
 
 # Inclure les routes existantes
