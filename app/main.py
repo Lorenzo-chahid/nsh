@@ -60,8 +60,7 @@ app = FastAPI()
 
 # Configuration CORS
 origins = [
-    "http://localhost:3000",  # Frontend local
-    "https://nsh-frontend.onrender.com",  # Frontend sur Render
+    "*",  # Frontend sur Render
 ]
 
 app.add_middleware(
