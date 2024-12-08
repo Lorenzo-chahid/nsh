@@ -22,7 +22,7 @@ class SkillService:
         db: Session,
         project_id: int,
         user_data: dict,
-        openai_api_key="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",
+        openai_api_key="code to find",
         is_premium=True,
     ) -> list:
         """

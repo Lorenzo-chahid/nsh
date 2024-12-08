@@ -33,7 +33,7 @@ def generate_skills(
 
     # Configurez le logging pour tout afficher
     logging.basicConfig(level=logging.DEBUG)
-    openai_api_key = "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"
+    openai_api_key = "code to find"
     if not openai_api_key:
         logging.error("Clé API OpenAI non configurée.")
         raise HTTPException(status_code=500, detail="Clé API OpenAI non configurée.")
@@ -44,7 +44,7 @@ def generate_skills(
         generated_skills = SkillService.generate_skills_with_ai(
             request,
             1,
-            "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",
+            "code to find",
         )
 
         # Enregistrer les compétences générées
